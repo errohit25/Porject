@@ -18,7 +18,8 @@
     </style>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
+    <!--header -->
     <header class=" d-flex justify-content-between bg-dark text-white">
         <nav class="navbar-nav">
             <ul class="navbar-nav d-flex flex-row  justify-content-around d-flex">
@@ -43,11 +44,8 @@
 
             </ul>
         </div>
-
-
-
-
     </header>
+    <!--home section code-->
     <section class="home p-5" id="home">
         <div id="info" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -81,7 +79,8 @@
         </div>
 
     </section>
-    <footer class="bg-info mt-5 mb-5 pt-5 pb-5 ps-2 pe-2">
+    <!--About section code-->
+    <section class="bg-info mt-5 mb-5 pt-5 pb-5 ps-2 pe-2">
         <h3 class=" mb-4" style="text-align: center;">What is the job</h3>
         <div class=" row">
             <div class="col-2 ">
@@ -161,7 +160,7 @@
 
         </div>
 
-    </footer>
+    </section>
     <div class="row justify-content-center">
         <div class="float-start col-8 ">
             <h1 class="border border-2 rounded-circle border-danger d-inline w-25 h-25 ps-2 pe-2 ">1</h1>
@@ -176,15 +175,16 @@
                 you know about the company, industry, position (and if you took the time to research)</p>
         </div>
         <div class="col-4 ">
-            <img src="image/ind1.jpg" class="float-end me-5" width="200px" height="auto">
+            <img src="image/ind1.jpg" class="float-end me-5" width="200px">
         </div>
     </div>
-    <div class="row m-3 mt-3">
-        <div class="col-4">
-            <img src="image/ind2.png" class="" width="200px">
+    <div class="row d-flex  ">
+        <div class=" float-start col-4  ">
+            <img src="image/ind2.png" class="float-start " width="200px">
 
         </div>
-        <div class="col-12">
+        <div class=" float-end col-12 ">
+            <h1 class="border rounded-circle d-inline">2</h1>
 
         </div>
     </div>
@@ -265,6 +265,219 @@
         </div>
 
     </section>
+
+    <!-- Services code section -->
+    <section id="service" class="service">
+        <div class="container text-center">
+            <h2 class="mb-4">Services Provided by Naresh Institute and Technologies</h2>
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow p-3">
+                        <h4>Web Development Training</h4>
+                        <p>Hands-on training in HTML, CSS, JavaScript, and frameworks like React.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow p-3">
+                        <h4>Project-Based Learning</h4>
+                        <p>Real-world projects to build practical skills and portfolios.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow p-3">
+                        <h4>Placement Support</h4>
+                        <p>Resume building, mock interviews, and internship/job opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow p-3">
+                        <h4>Career Counseling</h4>
+                        <p>Guidance on choosing the right tech path and interview preparation.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow p-3">
+                        <h4>24x7 Doubt Support</h4>
+                        <p>Get your coding and concept doubts cleared anytime.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow p-3">
+                        <h4>Certifications</h4>
+                        <p>Earn certificates after course completion for skill verification.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Contact code section -->
+    <section id="Contact" class="Contact py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- signin section code-->
+    <section class=" sign py-5" id="sign">
+        <div class="container">
+            <h2 class="text-center mb-4">Sign In</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password"
+                                required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label class="form-check-label" for="remember">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                    </form>
+                    <p class="text-center mt-3">Don't have an account? <a href="#signup">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Sign up code-->
+    <section id="new" class="new py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sign Up</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullname" placeholder="Enter your full name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email-signup" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email-signup" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password-signup" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password-signup"
+                                placeholder="Create a password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password"
+                                placeholder="Confirm your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Create Account</button>
+                    </form>
+                    <p class="text-center mt-3">Already have an account? <a href="#signin">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--password change code-->
+    <section id="password" class=" password py-5 d-none d-lg-block ">
+        <div class="container">
+            <h2 class="text-center mb-4">Change Password</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="currentPassword" class="form-label">Current Password</label>
+                            <input type="password" class="form-control" id="currentPassword"
+                                placeholder="Enter current password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="newPassword"
+                                placeholder="Enter new password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmNewPassword" class="form-label">Confirm New Password</label>
+                            <input type="password" class="form-control" id="confirmNewPassword"
+                                placeholder="Confirm new password" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Update Password</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer code-->
+    <footer class="bg-dark text-white py-3 mt-auto justify-content-center align-content-center">
+        <h1 style="text-align: center;">Naresh Technologies</h1>
+        <div class="row ">
+            <div class="col ms-5  p-5">
+                <span class="bi bi-facebook d-block m-4">Facebook</span>
+                <span class="bi bi-twitter-x d-block m-4">Twitter</span>
+                <span class="bi bi-youtube d-block m-4">Youtube</span>
+                <span class="bi bi-google d-block m-4">Google</span>
+
+            </div>
+            <div class="col ms-5 p-5">
+
+                <nav class="navbar-nav">
+                    <ul class="navbar-nav    ">
+                        <li class="m-2 nav-item"><a href="#home" class="nav-link d-block"><span
+                                    class="bi bi-house"></span>
+                                Home</a>
+                        </li>
+                        <li class="m-2 nav-item"><a href="#about" class="nav-link d-block"><span
+                                    class="bi bi-question-circle"></span>
+                                About</a></li>
+                        <li class="m-2 nav-item"><a href="#service" class="nav-link d-block"><span
+                                    class="bi bi-tools"></span>
+                                Service</a></li>
+                        <li class="m-2 nav-item"><a href="#Contact" class="nav-link d-block"> <span
+                                    class="bi bi-telephone-forward"></span> Contact</a> </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="col p-5">
+                <span class="d-block m-3">Name : Naresh Istitute</span>
+                <span class="d-block m-3">Email : info@nareshit.com</span>
+                <span class="d-block m-3">Contact : +91-xxxxxxxxxx</span>
+                <span class="d-block m-3">Address : Sr nagar, Hyderabad, Telangana, India</span>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
 
 
 
